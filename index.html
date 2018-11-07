@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">        
+        <link rel="stylesheet" href="style/home.css">
+        <link rel="stylesheet" href="style/form.css">
+        <script src="scripts/telefone.js" defer></script>
+        <script src="scripts/cpf.js" defer></script>
+        <title>Faculdade Bakanas</title>
+        <link rel="shortcut icon" href="images/favicon.png"/>
+    </head>
+
+    <body>
+         
+       <!-- Colocar em todas as Páginas--> 
+       <main> 
+            <header>   
+                <img class="img-bkn-header"src="images/header.jpeg">            
+            </header>
+        <!-- Colocar em todas as Páginas-->
+            <nav>
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="listacursos.html">Lista de Cursos</a></li>
+                  <li><a href="detalhescurso.html">Detalhes do Curso</a></li>
+                  <li><a href="disciplinas.html">Disciplina</a></li>
+                  <li><a href="noticias.html">Noticias</a></li>
+                  <li class="botaologin"><a href="">Login</a><li></li> <!-- Em Construção -->
+                </ul>
+            </nav>
+
+
+            <article>
+               
+                <h1 class="h1-home">Bakanas</h1>
+                
+                <h2 class="h2-sobre">SOBRE A INSTITUIÇÃO</h2>                
+                <p align="justify">Fundada em 2018, a <span class="bkns">Faculdade Bakanas</span> é considerada uma das melhores instituições de tecnologia da América Latina devido ao seu intenso compromisso com a educação ao longo dos anos e à transformação da sociedade através da tecnologia.
+                Referência nas áreas de TI, Gestão e Design, a Impacta conta com cursos de Graduação, Pós-Graduação, Extensão, MBA e cursos técnicos que preparam seus alunos para os desafios do mercado de trabalho, além de um time de mestres e doutores com larga experiência profissional.</p>
+                
+                <aside>
+                    <h1>Folha de São Paulo</h1>
+                    <p>"Uma das melhores faculdades de São Paulo. Perfeito para quem quer inovação com Tecnologia."</p>                  
+                </aside>
+                
+                <p align="justify">O alto nível de empregabilidade é uma das principais características da <span class="bkns">Faculdade Bakanas</span>, que é reconhecida pelas maiores empresas do País, em que seus alunos garantem posições de destaque no mercado de trabalho após o término do curso.</p>
+                <p align="justify">A Instituição ainda conta com infraestrutura moderna, avaliação positiva do MEC, cursos estrelados no Guia do Estudante e parcerias estratégicas com grandes empresas para oferecer a melhor formação para os alunos.</p>        
+                
+                    <h1 class="h1-contato">Contato</h1>
+        <form>                                               
+            <div class="form-inscricao">
+                <form id="form-inscricao-vestibular" class="animated" method="post" action="javascript:void(0);" name="inscricao_vestibular">
+                    <div class="field-inscricao">
+                        <input id="nome" type="text" name="desnome" placeholder="Nome" required>
+                    </div>
+                    <div class="field-inscricao">
+                        <input id="email" type="email" name="desemail" placeholder="E-mail" required>
+                    </div>
+                    <div class="field-inscricao">
+                        <input name="telefone" id="telefone-f1" type="text" placeholder="Telefone" required maxlength="15">
+                    </div>
+                    <div class="field-inscricao">
+                        <!-- <input id="cpf" name="cpf" onBlur="ValidarCPF(form1.cpf)" placeholder="CPF" required> -->
+                        <input type="text" name="cpf" id="mCPF" placeholder="CPF" required onkeydown="javascript: fMasc( this, mCPF );" maxlength="14">
+                    </div>
+                    <div class="field-inscricao select-style">
+                        <select id="periodo" type="select" name="periodos" required>
+                            <option value="0">Período</option>
+                            <option value='1003990' >Manhã</option>
+                            <option value='1003659' >Noturno</option>
+                        </select>
+                    </div>
+                    <div  class="field-inscricao select-style">
+                        <select id="curso" type="select" name="curso" required> 
+                            <option value="0">Curso</option>
+                            <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="Gestão dA Tecnologia da Informação">Ciência da Computação</option>
+                            <option value="Processos Gerenciais">Jogos Digitais</option>
+                            <option value="Produção Multimídia">Engenharia da Computação</option>
+                            <option value="Redes de Computadores">Redes de Computadores</option>
+                            <option value="Sistemas de Informação">Sistemas de Informação</option> 
+                        </select>
+                    </div>
+                    
+                    <div class="field-inscricao select-style">
+                        <select  type="select" name="grau-escolaridade" id="escolaridade">
+                            <option value="0">Grau de escolaridade</option>
+                            <option value="Médio Cursando">Médio Cursando</option>
+                            <option value="Médio Completo">Médio Completo</option>
+                            <option value="Ensino Superior Cursando">Ensino Superior Cursando</option>
+                            <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+                            <option value="Pós Graduação Cursando">Pós Graduação Cursando</option>
+                            <option value="Pós Graduação Completo">Pós Graduação Completo</option>
+                        </select>
+                    </div>
+
+                    <div class="field-inscricao select-style">
+                        <select name="estados-brasil" id="uf" required>
+                            <option value="0">Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <button id="btn-inscricao-vestibular" class="btn-vestibular btn-gradiente">Quero Informações!</button>
+                </form>
+
+
+            </article>
+
+            <div class="apoio">
+                <section class="fotos_apoio">
+                    <br><br><br>
+                    <img src="images/bkns-pe.jpeg" class="img-bkns-pe"> 
+                </section>
+            </div>
+            
+            <!-- Colocar em todas as Páginas-->
+            <footer>
+                <p>Avenida Rudge 317 - Barra Funda - São Pualo</p>
+                <p> &copy Copyright 2018 - Faculdade Bakanas - Todos os direitos reservados.</p>
+            </footer>
+    
+       
+     </main> 
+    </body>
+
+</html>

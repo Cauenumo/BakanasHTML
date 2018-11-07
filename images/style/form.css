@@ -1,0 +1,61 @@
+.field-inscricao input, .field-inscricao select {
+margin: 5px auto;
+border: 1px solid #CD919E;
+border-radius: 50px;
+padding: 10px 25px;
+background: transparent;
+font-size: 1.2em;
+width: 600px;
+color: black;
+}
+.field-inscricao select option {
+background: #FFE5FA;
+}
+form{
+    margin-left: 150px;
+}
+.field-inscricao{
+    color: black
+}
+.field-inscricao input{
+    color: black;
+}
+
+.btn-gradiente {
+    background: #00c2fc; /* Old browsers */
+    background: -moz-linear-gradient(left, #FFBBFF 0%, 	#EE82EE 50%, 	#D02090 100%); 
+    background: -webkit-linear-gradient(left, #828282 0%,	#EE82EE 50%,	#D02090 100%);
+    background: linear-gradient(to right, #828282 0%,	#EE82EE 50%,	#D02090 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c2fc', endColorstr='#0068c3',GradientType=1 ); 
+}
+
+.btn-vestibular {
+    text-align: center;
+    border-radius: 50px;
+    width: 340px;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 6px 20px;
+    border: none;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+button.btn-vestibular:hover {
+    transform: scale(1.1);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.h1-contato{
+    text-align: center;
+    color: purple;
+    font-size: 60px;
+    text-shadow: 2px 5px 8px black;
+    margin-bottom: 10px;
+}
+button{
+    margin-left: 100px;
+}
